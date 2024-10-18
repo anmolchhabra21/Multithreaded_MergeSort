@@ -1,5 +1,6 @@
 #include "mergeSort.hpp"
 #include <stdlib.h>
+#include <iostream>
 
 MergeSort::MergeSort(std::vector<int> *nums){
     this->nums = nums;
@@ -10,7 +11,7 @@ MergeSort::~MergeSort(){
 }
 
 void MergeSort::recursiveSort(int left, int right){
-    if(left<=right){
+    if(left>=right){
         return;
     }
 
@@ -53,4 +54,7 @@ void MergeSort::sort(){
         exit(1);
     }
     recursiveSort(0, (*nums).size() - 1);
+    // for(int i=0; i<(*nums).size(); i++){
+    //     std::cout<<(*nums)[i]<<" ";
+    // }
 }

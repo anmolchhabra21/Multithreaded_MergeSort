@@ -4,7 +4,7 @@
 
 int main(int argc, char* argv[]){
 
-    const int SIZE = 1000;
+    const int SIZE = 10;
     std::vector<int> nums(SIZE);
 
     for(int i=0; i<SIZE; i++){
